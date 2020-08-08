@@ -29,8 +29,9 @@ Seth and Tom are requesting that an audit be completed on the election results a
 ## Summary
 This script can be used again with upcoming elections! The script does not specify candidate names or the counties that are being used, therefore we are able to use different data with the same script. In order to use this script again we would need to make a couple changes based on the file that is used.
 
-Row 9 in the current script pulls the data from the location stored on this computer:
+Row 9 in the current script pulls the data from the location stored in this repository. With each new file, the path would need to be updated.
 ```
 file_to_load = os.path.join("Resources/election_results.csv")
 ```
-This would need to be altered to the correct path with each new set of data.
+
+If the new data had new column, such as voter party affiliation, the data could be repurposed to add that count as well. The script would just need an additional for loop based on what information we are trying to analyze.
